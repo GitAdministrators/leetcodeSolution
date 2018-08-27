@@ -7,13 +7,9 @@ public:
          int maxLen = 1;
          bool table[1000][1000] = {false};
          
-    for (int i = 0; i < n; i++) 
-    {
-    table[i][i] = true;
-    }
-
     for (int i = 0; i < n-1; i++)
     {
+         table[i][i] = true;
          if (s[i] == s[i+1]) 
          {
             table[i][i+1] = true;
